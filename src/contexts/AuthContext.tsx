@@ -35,7 +35,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // axios instance
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'REACT_APP_API_URL=https://mlrmortexbackend.vercel.app/api'
 });
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
